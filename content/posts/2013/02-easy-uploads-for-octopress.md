@@ -34,7 +34,9 @@ module Jekyll
     def render(context)
       page = context.environments.first['page']
       unless page.nil? || page['date'].nil? || page['title'].nil?
-        @img['src'] = "/assets/posts/#{page['date'].strftime('%Y-%m-%d')}-#{page['title'].to_url}#{@img['src']}" 
+        title = page['title'].to_url
+        date = page['date'].strftime('%Y-%m-%d')
+        @img['src'] = "/assets/posts/#{date}-#{title}#{@img['src']}" 
       else
         ""
       end
