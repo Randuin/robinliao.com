@@ -1,0 +1,19 @@
+{
+  "name": "robinliao.com",
+  "version": "0.0.0",
+  "authors": [
+    "Robin Liao <randuin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-grid": "*",
+    "zepto": "~1.1.4"
+  }
+}

@@ -1,0 +1,12 @@
+baseurl = "http://localhost:1313"
+languageCode = "en-us"
+title = "Source Visuals"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
+
+[indexes]
+  category = "categories"
+  tag = "tags"

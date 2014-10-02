@@ -1,0 +1,13 @@
+{{ template "partials/header.html" . }}
+  <ul id="post-index">
+    {{ range first 20 .Data.Pages.ByDate.Reverse }}
+      <li>
+        <div class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+        {{ if .Params.postimage }}
+          <img src="{{ .Params.postimage }}" class="image" />
+        {{ end }}
+        <div class="content">{{ .Summary }}</div>
+      </li>
+    {{ end }}
+  </ul>
+{{ template "partials/footer.html" . }}
